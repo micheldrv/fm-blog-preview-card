@@ -1,0 +1,141 @@
+@font-face {
+  font-family: "Figtree";
+  src: url("assets/fonts/Figtree-VariableFont_wght.ttf");
+}
+
+:root {
+  --yellow: hsl(47, 88%, 63%);
+  --white: hsl(0, 0%, 100%);
+  --gray-500: hsl(0, 0%, 42%);
+  --gray-950: hsl(0, 0%, 7%);
+}
+
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+  background-color: var(--yellow);
+  font-family: Figtree, sans-serif;
+  font-weight: 500;
+  font-size: 16px;
+}
+
+.card {
+  box-sizing: border-box;
+  max-width: 384px;
+  border: 1px solid var(--gray-950);
+  border-radius: 20px;
+  background-color: var(--white);
+  box-shadow: 8px 8px var(--gray-950);
+  padding: 23px;
+  margin: 10px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.card a {
+  color: var(--gray-950);
+  text-decoration: none;
+}
+
+.card a:hover {
+  color: var(--yellow);
+}
+
+.card_img {
+  border-radius: 11px;
+  width: 100%;
+}
+
+p {
+  margin: 0;
+}
+
+.tag {
+  background-color: var(--yellow);
+  display: inline-block;
+  width: max-content;
+  padding: 6px 12px;
+  border-radius: 4px;
+  font-weight: 800;
+  margin: 0;
+  margin-top: 7px;
+  font-size: 0.9em;
+}
+
+.date {
+  font-size: 0.9em;
+}
+
+.title {
+  margin: 2px 0;
+}
+
+.description {
+  margin: 0;
+  margin-bottom: 9px;
+  color: var(--gray-500);
+  line-height: 150%;
+}
+
+.user_div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  width: max-content;
+}
+
+.avatar_img {
+  width: 32px;
+  height: 32px;
+}
+
+.username {
+  font-weight: 800;
+  font-size: 0.9em;
+}
+
+.attribution {
+  text-align: right;
+  font-size: 11px;
+  position: fixed;
+  right: 10px;
+  bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  color: var(--gray-950);
+  font-weight: 500;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.info a {
+  font-weight: 800;
+  color: hsl(228, 45%, 44%);
+}
+
+@media (max-width: 675px) {
+  .attribution {
+    position: unset;
+    text-align: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5px;
+  }
+
+  .info {
+    flex-direction: row;
+    flex-wrap: nowrap;
+  }
+}
