@@ -173,3 +173,13 @@ body {
     }
   }
 }
+
+@media (min-width: 60rem) {
+  .attribution {
+    position: absolute;
+    right: var(--spacing-3);
+    bottom: var(--spacing-3);
+    align-items: end;
+    text-align: end;
+  }
+}
